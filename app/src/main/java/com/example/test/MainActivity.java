@@ -1,10 +1,14 @@
 package com.example.test;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
 import android.widget.Button;
 
 import me.yokeyword.fragmentation.SupportActivity;
@@ -16,10 +20,12 @@ public class MainActivity extends SupportActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        initView();
         initData();
         initEvent();
-//        loadRootFragment(R.id.ll_container, TestFragment1.newInstance());
-//        start(TestFragment2.newInstance());
+    }
+
+    private void initView() {
     }
 
     public void initData() {
@@ -81,5 +87,10 @@ public class MainActivity extends SupportActivity {
 
             }
         });
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
     }
 }
