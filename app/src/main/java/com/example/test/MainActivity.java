@@ -40,7 +40,7 @@ public class MainActivity extends SupportActivity {
     }
 
     public void initData() {
-        String date = "20210420";
+        String date = "20210410";
         String s = timeStringToMsgDisplayTime(date);
         anr_btn.setText(s);
 
