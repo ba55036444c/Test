@@ -60,6 +60,7 @@ dependencies {
     implementation 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar'
 
     implementation 'me.xuexuan:fragmentationx:1.0.6'
+    implementation 'com.blankj:utilcodex:1.30.2'
 
 
     //思必驰语音SDK
